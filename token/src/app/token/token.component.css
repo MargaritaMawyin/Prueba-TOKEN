@@ -1,0 +1,45 @@
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.example-card {
+  margin-bottom: 10px;
+}
+
+.countdown-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.countdown {
+  font-size: 48px;
+  color: #007bff; /* Color azul */
+}
+
+.message {
+  font-size: 24px;
+  color: #28a745; /* Color verde */
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+mat-card-header {
+  justify-content: center;
+}
+
+mat-card-subtitle{
+  font-size: 40px;
+}

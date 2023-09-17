@@ -1,0 +1,11 @@
+<div class="card">
+  <ul>
+    {% for t in token %}
+    <li>
+      <div class="card-header">Usuario: {{t.usuario}}</div>
+      <div class="card-body">
+        <p>Token: {{t.token}}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
