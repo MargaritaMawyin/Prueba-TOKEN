@@ -40,6 +40,13 @@ mat-card-header {
   justify-content: center;
 }
 
-mat-card-subtitle{
+mat-card-subtitle {
   font-size: 40px;
 }
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

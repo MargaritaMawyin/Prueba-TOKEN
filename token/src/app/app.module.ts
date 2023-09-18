@@ -7,12 +7,22 @@ import { TokenComponent } from './token/token.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar'
 import { MatCardModule } from '@angular/material/card'; // Importa MatCardModule
 import {  HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './main/main.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { TablaComponent } from './tabla/tabla.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TokenComponent
+    TokenComponent,
+    MainComponent,
+    TablaComponent
   ],
   
   imports: [
@@ -20,7 +30,13 @@ import {  HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MatProgressBarModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatSelectModule,
+    FormsModule,
+    MatIconModule
   ],
   providers: [
   ],

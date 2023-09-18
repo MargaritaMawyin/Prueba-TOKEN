@@ -1,0 +1,6 @@
+.angular/cache/**/*.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/ filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.2.2/angular-webpack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.2.2/angular-webpack/86cab370df3d192defe73752ad1318cb20c15275/19.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.2.2/angular-webpack/86cab370df3d192defe73752ad1318cb20c15275/16.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.2.2/angular-webpack/dcda120a45ca3e033cf7788369234cd59a9a9539/7.pack filter=lfs diff=lfs merge=lfs -text

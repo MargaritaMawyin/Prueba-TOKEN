@@ -1,34 +1,42 @@
 <!-- token-virtual.component.html -->
-
-<div class="token-container">
-  <div >
-    <!-- <p>Número de Token: {{ tokenNumber }}</p> -->
-    <!-- <p>Expira: {{ tokenExpiry }}</p> -->
-
-    <mat-card class="example-card">
-      <mat-card-header>
-        <mat-card-title>Token</mat-card-title>
-        <mat-card-subtitle>{{ tokenNumber }}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <div class="countdown-container">
-         
-          <div *ngIf="isCounting" class="countdown">
-            <h2>{{ counter }}</h2>
+<mat-grid-list cols="3" rowHeight="3:2">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile><div class="token-container">
+    <div >
+      <!-- <p>Número de Token: {{ tokenNumber }}</p> -->
+      <!-- <p>Expira: {{ tokenExpiry }}</p> -->
+     
+      <mat-card class="example-card">
+       
+        <mat-card-header>
+          <mat-card-title> <p>Token:</p></mat-card-title>
+          <mat-card-subtitle>{{ tokenNumber }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="countdown-container">
+           
+            <div *ngIf="isCounting" class="countdown">
+              <!-- <h2>{{ counter }}</h2> -->
+            </div>
+            <!-- <div *ngIf="!isCounting" class="message">
+              <p>¡Tiempo terminado!</p>
+            </div> -->
           </div>
-          <!-- <div *ngIf="!isCounting" class="message">
-            <p>¡Tiempo terminado!</p>
-          </div> -->
-        </div>
-        <section class="example-section">
-          <mat-progress-bar class="example-margin" [value]="counter" >
-          </mat-progress-bar>
-        </section>
-      </mat-card-content>
-      <!-- <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions> -->
-    </mat-card>
-  </div>
-</div>
+          <section class="example-section">
+            <mat-progress-bar class="example-margin" [value]="counter" >
+            </mat-progress-bar>
+          </section>
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+      </mat-card>
+    </div>
+  </div></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile><button type="button" class="btn btn-primary" routerLink="main">Regresar</button></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
+

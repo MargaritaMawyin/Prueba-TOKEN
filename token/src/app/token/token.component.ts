@@ -30,10 +30,11 @@ export class TokenComponent {
     const min = 100000;
     const max = 999999;
     // Crea un observable que emite un valor cada segundo
-    const source = interval(100);
+    const source = interval(600);
     // this.tokenNumber=this.generateRandomToken();
     this.tokenNumber = this.generateRandomToken();
-
+   
+    
     // Usa takeWhile para detener el contador cuando llegue a cero
     source.pipe(
       takeWhile(() => this.counter < 100)
@@ -41,8 +42,16 @@ export class TokenComponent {
       this.counter++;
       while (this.counter === 100) {
         this.counter = 0;
-        // Convierte el número aleatorio en una cadena de 6 dígitos (agregando ceros a la izquierda si es necesario)
         this.tokenNumber = this.generateRandomToken();
+        // let bodyToken ={
+        //   "token" : this.tokenNumber,
+        //   "usuario" : "User"
+        // }
+        // this.registroService.enviarRegistros(bodyToken).subscribe(
+        //   data =>{
+        //   console.log("bodyToken: ",data);
+    
+        // });
       }
     });
   }
