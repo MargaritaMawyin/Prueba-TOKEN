@@ -1,15 +1,14 @@
-La carpeta registro contiene el codigo del backend en Django
-La carpeta token contiene el codigo del frontend en Angular
+La carpeta registro contiene el código del backend en Django
+La carpeta token contiene el código del frontend en Angular
 
 ## Para correr el proyecto:
 
-### Desde registro
+### Desde la terminal de registro, correr el servidor
 * npm i
 * python manage.py runserver
 
-### Desde token
+### Desde la terminal de token
 * npm i
-* npm install rxjs
 * ng serve
 
 En el frontend hay 3 vistas, la princial, que lleva a las otras 2 vistas, token activo y la tabla

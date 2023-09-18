@@ -43,15 +43,15 @@ export class TokenComponent {
       while (this.counter === 100) {
         this.counter = 0;
         this.tokenNumber = this.generateRandomToken();
-        // let bodyToken ={
-        //   "token" : this.tokenNumber,
-        //   "usuario" : "User"
-        // }
-        // this.registroService.enviarRegistros(bodyToken).subscribe(
-        //   data =>{
-        //   console.log("bodyToken: ",data);
+        let bodyToken ={
+          "token" : this.tokenNumber,
+          "usuario" : "User"
+        }
+        this.registroService.enviarRegistros(bodyToken).subscribe(
+          data =>{
+          console.log("bodyToken: ",data);
     
-        // });
+        });
       }
     });
   }
